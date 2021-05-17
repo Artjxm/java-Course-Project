@@ -15,11 +15,11 @@
 
 **_Инструменты и технологии:_**
 
-- JDK (не ниже 8)
+- JDK
 - Создание Spring MVC web-приложений
-- RESTful web-сервисов или (на выбор)
-- Spring ORM или Spring DAO (на выбор)
-- Gradle или Maven (на выбор)
+- RESTful web-сервисов
+- Spring ORM или Spring DAO
+- Gradle или Maven
 - GitHub
 - IntelliJIDEA
 
