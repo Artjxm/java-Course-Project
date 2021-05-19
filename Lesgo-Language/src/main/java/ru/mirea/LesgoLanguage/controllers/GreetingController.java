@@ -13,7 +13,7 @@ public class GreetingController {
 
     @GetMapping("/")
     public String greeting(Model model) {
-        model.addAttribute("title", "Main page");
+        model.addAttribute("title", "главная страница");
         return "home";
     }
 
