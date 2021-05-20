@@ -3,7 +3,6 @@ package ru.mirea.LesgoLanguage.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import ru.mirea.LesgoLanguage.repos.PostRepo;
 
 /**
  * @author Moskovka Artyom
