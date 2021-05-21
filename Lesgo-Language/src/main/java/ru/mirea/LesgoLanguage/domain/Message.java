@@ -15,6 +15,18 @@ public class Message {
     @JoinColumn(name = "user_id")
     private User author;
 
+    public Message() {
+    }
+
+    public Message(String text, String tag, User user) {
+        this.author = user;
+        this.text = text;
+        this.tag = tag;
+    }
+
+    public String getAuthorName() {
+        return author != null ? author.getUsername() : "<none>";
+    }
 
     public User getAuthor() {
         return author;
@@ -22,19 +34,6 @@ public class Message {
 
     public void setAuthor(User author) {
         this.author = author;
-    }
-
-    public Message() {
-    }
-
-    public Message(String text, String tag, User user) {
-        this.text = text;
-        this.tag = tag;
-        this.author = user;
-    }
-
-    public String getAuthorName() {
-        return author != null ? author.getUsername() : "Неизвестный автор";
     }
 
     public void setText(String text) {

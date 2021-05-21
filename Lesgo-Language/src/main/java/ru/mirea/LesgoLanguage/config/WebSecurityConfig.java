@@ -3,7 +3,6 @@ package ru.mirea.LesgoLanguage.config;
 /**
  * @author Moskovka Artyom
  */
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -26,14 +25,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/", "/registration").permitAll()
                 .anyRequest().authenticated()
                 .and()
-                    .formLogin()
-                    .loginPage("/login")
-                    .permitAll()
-                    .defaultSuccessUrl("/main")
+                .formLogin()
+                .loginPage("/login")
+                .permitAll()
                 .and()
-                    .logout()
-                    .permitAll();
-        }
+                .logout()
+                .permitAll();
+    }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
