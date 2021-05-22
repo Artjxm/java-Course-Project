@@ -2,6 +2,6 @@
 <#import "parts/login.ftlh" as l>
 
 <@c.page>
-    <div class="mb-4">Страница авторизации</div>
+    <div class="m-3">Страница авторизации</div>
 <@l.login "/login" false/>
 </@c.page>

@@ -57,8 +57,7 @@ public class MainController {
             @RequestParam String text,
             @RequestParam String tag, Map<String, Object> model,
             @RequestParam("file") MultipartFile file
-    ) throws IOException {
-        Message message = new Message(text, tag, user);
+    ) throws IOException { Message message = new Message(text, tag, user);
 
         if (file != null && !file.getOriginalFilename().isEmpty()) {
             File uploadDir = new File(uploadPath);

@@ -13,17 +13,22 @@
                     <a class="nav-link active" aria-current="page" href="/">Домашняя страница</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/main">Уроки</a>
+                    <a class="nav-link active" aria-current="page" href="/main"><#if name = "unknown">Войти<#else>Уроки</#if></a>
                 </li>
                 <#if isAdmin>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/user">Список пользователей</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/user">Список пользователей</a>
+                    </li>
+                    <li>
+                        <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Новый урок
+                        </a>
+                    </li>
                 </#if>
             </ul>
         </div>
 
-        <div class="navbar-text mr-7">${name}</div>
-        <@l.logout />
+        <#if name !="unknown"><div class="navbar-text">${name}</div></#if>
+        <#if name !="unknown"><@l.logout/></#if>
     </div>
 </nav>
