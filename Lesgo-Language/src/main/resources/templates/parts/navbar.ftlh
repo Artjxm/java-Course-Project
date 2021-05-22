@@ -20,7 +20,7 @@
                         <a class="nav-link active" aria-current="page" href="/user">Список пользователей</a>
                     </li>
                     <li>
-                        <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="nav-link active" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                             Новый урок
                         </a>
                     </li>
